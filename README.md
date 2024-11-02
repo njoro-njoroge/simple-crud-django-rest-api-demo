@@ -59,7 +59,4 @@ Use tools like Postman or cURL to test the API endpoints for managing products. 
 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
-License
 
-    Django and Django REST Framework for their powerful frameworks.
-    Open source community for inspiration and support.
