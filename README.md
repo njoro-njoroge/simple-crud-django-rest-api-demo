@@ -1,9 +1,6 @@
 Simple CRUD Django REST API Demo
 
-This project is a straightforward demonstration of a CRUD (Create, Read, Update, Delete) API built using Django 
-and Django REST Framework. It showcases essential functionalities for managing products, including retrieving,
-creating, updating, and deleting product entries.
-
+This project is a straightforward demonstration of a CRUD (Create, Read, Update, Delete) API built using Django and Django REST Framework. It showcases essential functionalities for managing products, including retrieving, creating, updating, and deleting product entries.
 Features
 
     Get Products: Retrieve a list of all products or receive a message if no products are found.
@@ -20,9 +17,11 @@ Prerequisites
     Django REST Framework
 
 Installation
+
     Clone the repository:
 
     bash
+
 git clone https://github.com/yourusername/simple-crud-django-rest-api-demo.git
 cd simple-crud-django-rest-api-demo
 
@@ -37,6 +36,14 @@ Run migrations to set up the database:
 bash
 
 python manage.py migrate
+
+Create a super admin account:
+
+bash
+
+python manage.py createsuperuser
+
+Follow the prompts to set up the username, email, and password for the admin account. Once created, you can access the Django admin interface to manage products.
 
 Start the development server:
 
