@@ -1,7 +1,6 @@
 Simple CRUD Django REST API Demo
 
-This project is a straightforward demonstration 
-of a CRUD (Create, Read, Update, Delete) API built using Django and Django REST Framework. It showcases essential functionalities for managing products, including retrieving, creating, updating, and deleting product entries.
+This project is a straightforward demonstration of a CRUD (Create, Read, Update, Delete) API built using Django and Django REST Framework. It showcases essential functionalities for managing products, including retrieving, creating, updating, and deleting product entries.
 Features
 
     Get Products: Retrieve a list of all products or receive a message if no products are found.
