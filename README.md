@@ -12,36 +12,59 @@ Features
 Getting Started
 Prerequisites
 
+Make sure you have the following installed:
+
     Python 3.12.4
     Django 5.1.2
     Django REST Framework
 
 Installation
 
-    Clone the repository:
+Clone the repository:
 
-    bash
+bash
 
-git clone https://github.com/yourusername/simple-crud-django-rest-api-demo.git
-cd simple-crud-django-rest-api-demo
+    git clone https://github.com/yourusername/simple-crud-django-rest-api-demo.git
+    cd simple-crud-django-rest-api-demo
+
+Create a virtual environment (recommended):
+
+bash
+
+    python -m venv venv
+
+Activate the virtual environment:
+
+On macOS/Linux:
+
+bash
+
+    source venv/bin/activate
+
+On Windows:
+
+bash
+
+    venv\Scripts\activate
 
 Install the required packages:
 
 bash
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Run migrations to set up the database:
 
 bash
 
-python manage.py migrate
+      python manage.py makemigrations
+      python manage.py migrate
 
 Create a super admin account:
 
 bash
 
-python manage.py createsuperuser
+    python manage.py createsuperuser
 
 Follow the prompts to set up the username, email, and password for the admin account. Once created, you can access the Django admin interface to manage products.
 
@@ -51,17 +74,25 @@ bash
 
     python manage.py runserver
 
-    Explore the API endpoints at http://localhost:8000/api/products/.
+Explore the API endpoints at http://localhost:8000/api/products/.
 
 Usage
 
 Use tools like Postman or cURL to test the API endpoints for managing products. Here are some examples of requests you can make:
 
-    GET /api/products/ - Retrieve a list of all products.
-    POST /api/products/create/ - Create a new product (send JSON data).
-    GET /api/products/<int:pk>/ - Retrieve details of a specific product.
-    PUT /api/products/<int:pk>/ - Update a specific product (send JSON data).
-    DELETE /api/products/<int:pk>/ - Delete a specific product.
+    GET /api/products/: Retrieve a list of all products.
+    POST /api/products/create/: Create a new product (send JSON data, e.g.):
+
+    json
+
+    {
+        "name": "Laptops",
+        "stock": 300
+    }
+
+    GET /api/products/<int:pk>/: Retrieve details of a specific product.
+    PUT /api/products/<int:pk>/: Update a specific product (send JSON data).
+    DELETE /api/products/<int:pk>/: Delete a specific product.
 
 Contributing
 
